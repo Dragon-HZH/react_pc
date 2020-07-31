@@ -1,0 +1,94 @@
+.webHeader {
+	background: linear-gradient(60deg, #26a2fb, #5ed6d7);
+	& > header {
+		margin: 0 auto;
+		width: 1200px;
+		height: 114px;
+		font-size: 36px;
+		color: #fff;
+        line-height: 114px;
+        display: flex;
+        align-items: center;
+	}
+	& > nav {
+        background: rgba(0, 0, 0, 0.164);
+		& > ul {
+			width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: start;
+            align-items: center;
+            &>li>a{
+                border-right: 1px solid #186c96;
+                line-height: 45px;
+                text-align: center;
+                &:hover{
+                    background-color:#186c96;
+                }
+            }
+			&  li {
+                position: relative;
+                &>a{
+                    padding: 0 29px;
+                    color: #fff;
+                    display: block;
+                    cursor: pointer;
+                }
+                
+                &:hover .menu_select{
+                    display: block;
+                }
+                &>.menu_select{
+                    display: none;
+                    position: absolute;
+                    top: 45px;
+                    left: 0;
+                    width: 186px;
+                    line-height: 36px;
+                    background-color: #d9f1fd;
+                    &>li{
+                        &>a{
+                            color: #456;
+                            &:hover{
+                                color: #fff;
+                                background-color: #0b608a;
+                            }
+                        }
+                    }
+                }
+
+                
+			}
+		}
+	}
+}
+.webHeader+div{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &>div{
+        flex:1;
+        font-size: 14px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    &>span{
+        font-size: 18px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-weight: 500;
+    }
+    &>span:last-child{
+        cursor: pointer;
+    }
+    & .size{
+        font-size: 28px;
+    }
+}
+
